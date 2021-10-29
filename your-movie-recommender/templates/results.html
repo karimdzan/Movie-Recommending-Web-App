@@ -1,0 +1,10 @@
+{%extends 'app.html'%}
+{%block content%}
+<div class="results">
+    <style>h1{font-size:25px;}</style>
+    <h1>Movies recommended to you:</h1>
+      {% for movie in movie_list %}
+        <p>{{ movie[0] }} </p>
+      {% endfor %}
+</div>
+{%endblock%}
